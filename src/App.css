@@ -1,8 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap%27');
+
+
 .header {
-  height: 20vh;
+  height: 94px;
   display: flex;
+  width: 992px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .bootstrap {
-  width: 15vw;
+  height: 32px;
+  padding: 5%;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation-bar {
+  color: white;
+  display: flex;
+  width: 733px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: 'Montserrat';
+}
+
+.navigation-items {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.navigation-items:hover{
+  color: #f8d04d;
+}
+
+.hamburger {
+  display: none;
+  color: white;
+  background-color: #f8d04d;
+  border-radius: 5px;
+  padding: 5px;
+  border: 0;
+}
+
+@media screen and (max-width: 990px){
+  .hamburger {
+    display: block;
+  }
+
+  .header {
+    background-color: #232228;
+  }
+
+  .navigation-bar{
+    display: column;
+  }
 }
