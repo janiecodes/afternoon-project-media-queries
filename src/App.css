@@ -1,40 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap%27');
 
-.body {
+body {
   background-image: url("https://cdn.discordapp.com/attachments/760894093651476551/771090429046292530/header-bg.jpg");
+
 }
 
-.header{
+header{
+  height: 94px;
+  width: 1656px;
+  align-items: center;
+
+
+}
+
+.header-container {
   height: 94px;
   display: flex;
-  width: 992px;
-  align-items: center;
+  width: 1140px;
   justify-content: space-between;
 }
 
 .bootstrap {
   height: 32px;
   padding: 5%;
+  align-items: center;
 }
 
 nav {
+  padding-left: 450px;
   display: flex;
   justify-content: flex-end;
-}
-
-.navigation-bar {
+  width: 1000px;
   color: white;
-  display: flex;
-  width: 733px;
+  align-items: center;
+  justify-content: space-between;
   flex-direction: row;
-  justify-content: space-evenly;
   font-family: 'Montserrat';
 }
 
 .navigation-items {
   display: flex;
-  align-items: center;
   font-style: normal;
+  margin: 5%;
   font-weight: 400;
 }
 
@@ -51,16 +58,24 @@ nav {
   border: 0;
 }
 
-@media screen and (max-width: 990px){
+@media screen and (max-width: 991px){
   .hamburger {
     display: block;
   }
 
-  .header {
+  header {
     background-color: #232228;
   }
 
-  .navigation-bar{
-    display: column;
+  .header-container {
+    height: 40px;
+    padding: 16px 16px 0 16px;
   }
+
+  nav {
+    width: 720px;
+  }
+
+
+
 }
