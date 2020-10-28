@@ -13,7 +13,7 @@ class Header extends Component{
     render(){
         return(
             <header>
-                <div className="header">
+                <div className="header-container">
                     <img className="bootstrap" src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/navbar-logo.svg"/>
                  
                 <nav>

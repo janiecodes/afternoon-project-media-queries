@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap%27');
 
+.body {
+  background-image: url("https://cdn.discordapp.com/attachments/760894093651476551/771090429046292530/header-bg.jpg");
+}
 
-.header {
+.header{
   height: 94px;
   display: flex;
   width: 992px;
