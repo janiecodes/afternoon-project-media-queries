@@ -1,32 +1,22 @@
-import React, {Component} from 'react'
+import React from 'react'
+import logo from '../navbar-logo.svg';
 
-class Header extends Component{
-    constructor(){
-        super()
-        this.state = {
-            
-        }
-    }
-
-    
-
-    render(){
-        return(
-            <header>
-                <div className="header-container">
-                    <img className="bootstrap" src="https://startbootstrap.github.io/startbootstrap-agency/assets/img/navbar-logo.svg"/>
-                    <nav>
-                            <div className="navigation-items" href="#services">SERVICES</div>
-                            <div className="navigation-items" href="#portfolio">PORTFOLIO</div>
-                            <div className="navigation-items" href="#about">ABOUT</div>
-                            <div className="navigation-items" href="#team">TEAM</div>
-                            <div className="navigation-items" href="#contact">CONTACT</div>
-                    </nav>
-                </div> 
-                <button className="hamburger">MENU &#9776;</button>
-            </header>
-        )
-    }
+export default function Header(){
+  return (
+    <header className="welcome-header">
+        <div className="logo-menu-box">
+            <a href='http://localhost:3000'>
+                <img className="logo-svg" src={logo}/>
+            </a>
+            <button className="menu-button-mobile">MENU &#9776;</button>
+        </div>
+        <ul className="nav-link-box">
+            <li className="nav-link">SERVICES</li>
+            <li className="nav-link">PORTFOLIO</li>
+            <li className="nav-link">ABOUT</li>
+            <li className="nav-link">TEAM</li>
+            <li className="nav-link">CONTACTS</li>
+        </ul>
+    </header>
+  ) 
 }
-
-export default Header

@@ -1,13 +1,13 @@
-import React, {Component} from 'react'
+import React from 'react'
+import Welcome from './components/Welcome'
 import './App.css';
-import Header from './components/Header'
 
-function App() {
+function App(){
   return (
-    <div className="App">
-      <Header/>
+    <div>
+      <Welcome/>
     </div>
   );
-}
+} 
 
 export default App;
